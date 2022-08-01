@@ -1,0 +1,143 @@
+/* =========================== RESET STYLES =========================== */
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	padding: 0;
+	background-color: transparent;
+}
+
+a {
+	text-decoration: none;
+}
+/* =========================== /RESET STYLES =========================== */
+
+/* =========================== COMPONENTS ===========================  */
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* =========================== /COMPONENTS ===========================  */
+
+/* =========================== HEADER ===========================  */
+.header-text {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 0.03;
+	letter-spacing: 0.1em;
+	/* color: #ffffff; */
+}
+
+.header-tel {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 0.03;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	/* color: #ffffff; */
+}
+
+.header-button {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 0.03;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	/* color: #ffffff; */
+}
+
+.logo {
+	margin-right: 70px;
+}
+.list-align {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.tel-align {
+	display: flex;
+	align-items: center;
+}
+.header-align {
+	display: flex;
+	align-items: center;
+}
+.nav-align {
+	display: flex;
+	align-items: center;
+}
+
+/* =========================== /HEADER ===========================  */
+
+/* =========================== HERO ===========================  */
+.social {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+	color: #303030;
+}
+
+.top-text {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	/* color: rgba(157, 164, 189, 0.6); */
+}
+
+.h-text {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 0.07;
+	letter-spacing: 0.05em;
+	/* color: #ffffff; */
+}
+
+.p-text {
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	/* color: #9da4bd; */
+}
+
+/* .bg-hero {
+	background-image: url(../img/hero/Slider.jpg);
+	background-size: cover;
+} */
+
+/* =========================== /HERO ===========================  */ ;
