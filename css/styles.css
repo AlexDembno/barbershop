@@ -39,6 +39,11 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
+.section {
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+
 .container {
 	width: 1200px;
 	margin-left: auto;
@@ -47,9 +52,29 @@ body {
 	padding-right: 15px;
 }
 
+.button {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 0.03;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 12px 20px;
+	border: 1px solid #ff6c00;
+	border-radius: 25px;
+}
+
 /* =========================== /COMPONENTS ===========================  */
 
 /* =========================== HEADER ===========================  */
+
+.header {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
 .header-text {
 	font-weight: 600;
 	font-size: 12px;
@@ -59,6 +84,7 @@ body {
 }
 
 .header-tel {
+	margin-right: 40px;
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 0.03;
@@ -67,30 +93,24 @@ body {
 	/* color: #ffffff; */
 }
 
-.header-button {
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 0.03;
-	letter-spacing: 0.09em;
-	text-transform: uppercase;
-	/* color: #ffffff; */
-}
-
-.logo {
+.link-logo {
 	margin-right: 70px;
 }
 .list-align {
 	display: flex;
 	align-items: center;
+
 	gap: 40px;
 }
 .tel-align {
 	display: flex;
 	align-items: center;
+	margin-left: auto;
 }
 .header-align {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 .nav-align {
 	display: flex;
@@ -100,6 +120,16 @@ body {
 /* =========================== /HEADER ===========================  */
 
 /* =========================== HERO ===========================  */
+.hero-container {
+	position: relative;
+}
+
+.right-social {
+	position: absolute;
+	transform: rotate(-90deg);
+	z-index: 1;
+}
+
 .social {
 	font-family: "Open Sans";
 	font-style: normal;
@@ -119,7 +149,7 @@ body {
 	/* color: rgba(157, 164, 189, 0.6); */
 }
 
-.h-text {
+.hero-main-text {
 	font-family: "Raleway";
 	font-weight: 700;
 	font-size: 72px;
@@ -128,16 +158,204 @@ body {
 	/* color: #ffffff; */
 }
 
-.p-text {
+.text {
 	font-size: 18px;
 	line-height: 1.67;
 	letter-spacing: 0.02em;
 	/* color: #9da4bd; */
 }
 
-/* .bg-hero {
+.bg-hero {
+	padding-top: 272px;
+	padding-bottom: 206px;
+	padding-left: 100px;
 	background-image: url(../img/hero/Slider.jpg);
-	background-size: cover;
-} */
+	background-repeat: no-repeat;
+	background-size: auto;
 
-/* =========================== /HERO ===========================  */ ;
+	background-position: right top;
+}
+
+/* =========================== /HERO ===========================  */
+
+/* =========================== ABOUT US ===========================  */
+.about-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 55px;
+	gap: 30px;
+	margin-right: 64px;
+}
+.main-text {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+	color: #303030;
+}
+
+.aboutus-large-text {
+	font-size: 14px;
+	line-height: 1.86;
+	letter-spacing: 0.02em;
+	color: #555555;
+}
+
+/* =========================== /ABOUT US ===========================  */
+
+/* =========================== PRICE ===========================  */
+.table-text {
+	font-size: 18px;
+	line-height: 1.67;
+
+	letter-spacing: 0.02em;
+
+	color: #9da4bd;
+}
+
+.price-text {
+	font-size: 18px;
+	line-height: 1.67;
+
+	text-align: right;
+	letter-spacing: 0.02em;
+
+	color: #9da4bd;
+}
+/* =========================== /PRICE ===========================  */
+
+/* =========================== WHY ===========================  */
+.numbers-text {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 57px;
+	text-align: center;
+	letter-spacing: 0.05em;
+
+	color: #303030;
+}
+
+.plus {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #ff6c00;
+}
+
+.why-text {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+
+	color: #303030;
+}
+/* =========================== /WHY ===========================  */
+
+/* ========================= OUR MASTYERS =========================  */
+.master-text {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	/* identical to box height */
+
+	text-align: center;
+	letter-spacing: 0.02em;
+
+	color: #303030;
+}
+
+.profi-text {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	/* identical to box height */
+
+	text-align: center;
+	letter-spacing: 0.02em;
+
+	color: #ff6c00;
+}
+/* ========================= /OUR MASTYERS =========================  */
+
+/* ========================= GALLERY =========================  */
+.gallery-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0000);
+}
+/* ========================= /GALLERY =========================  */
+
+/* ========================= CONTACTS =========================  */
+.contact-text {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	/* or 167% */
+
+	letter-spacing: 0.02em;
+
+	color: #9da4bd;
+}
+
+.mail-text {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	/* identical to box height, or 167% */
+
+	letter-spacing: 0.02em;
+	text-decoration-line: underline;
+
+	color: #9da4bd;
+}
+
+/* ========================= /CONTACTS =========================  */
+
+/* ========================= FOOTER =========================  */
+
+.copyright-text {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	/* identical to box height */
+
+	letter-spacing: 0.2em;
+
+	color: #9da4bd;
+}
+
+/* ========================= /FOOTER =========================  */
