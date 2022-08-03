@@ -19,7 +19,6 @@ ol {
 
 img {
 	display: block;
-	max-width: 100%;
 }
 
 button {
@@ -46,8 +45,8 @@ body {
 
 .container {
 	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 40px;
+	margin-right: 40px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -99,7 +98,6 @@ body {
 .list-align {
 	display: flex;
 	align-items: center;
-
 	gap: 40px;
 }
 .tel-align {
@@ -128,9 +126,20 @@ body {
 	position: absolute;
 	transform: rotate(-90deg);
 	z-index: 1;
+	/* left: 50%; */
+	top: 50%;
+}
+
+.hero-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 58px;
+	padding-right: 42px;
 }
 
 .social {
+	display: inline;
 	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 600;
@@ -138,6 +147,10 @@ body {
 	line-height: 1.36;
 	letter-spacing: 0.2em;
 	color: #303030;
+}
+
+.social-link {
+	margin-right: 40px;
 }
 
 .top-text {
@@ -179,20 +192,34 @@ body {
 /* =========================== /HERO ===========================  */
 
 /* =========================== ABOUT US ===========================  */
+
+.about-list,
+.text-blok {
+	flex-basis: calc((100% - 30px) / 2);
+}
 .about-container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
 .about-list {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	margin-left: 55px;
+
+	/* margin-left: 15px; */
 	gap: 30px;
 	margin-right: 64px;
 }
+.about-img {
+	display: inline-block;
+}
+
+.text-blok {
+	display: block;
+	width: auto;
+	padding-left: 34px;
+}
+
 .main-text {
 	font-family: "Raleway";
 	font-weight: 700;
@@ -209,9 +236,20 @@ body {
 	color: #555555;
 }
 
+.about-marbottom {
+	margin-bottom: 20px;
+}
+
 /* =========================== /ABOUT US ===========================  */
 
 /* =========================== PRICE ===========================  */
+
+.price-section {
+	background: #111319;
+	background-image: url(../img/price/img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .table-text {
 	font-size: 18px;
 	line-height: 1.67;
@@ -229,6 +267,22 @@ body {
 	letter-spacing: 0.02em;
 
 	color: #9da4bd;
+}
+
+.price-flex {
+	display: flex;
+	align-items: center;
+	/* justify-content: space-around; */
+}
+
+.table-right {
+	padding: 30px 40px;
+	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.table-left {
+	padding: 30px 40px;
+	background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 /* =========================== /PRICE ===========================  */
 
